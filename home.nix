@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, nur, ... }:
 
 {
   # Let Home Manager install and manage itself.
@@ -8,6 +8,18 @@
   # paths it should manage.
   home.username = "nik";
   home.homeDirectory = "/home/nik";
+
+  # Install these packages for my user
+  home.packages = with pkgs; [
+    htop
+    hugo
+    signal-desktop
+    spotify
+    unzip
+    vagrant
+    virt-manager
+    vlc
+  ];
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
