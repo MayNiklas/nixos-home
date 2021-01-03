@@ -11,6 +11,7 @@
 
   # Install these packages for my user
   home.packages = with pkgs; [
+    _1password-gui
     atom
     glances
     htop
