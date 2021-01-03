@@ -11,14 +11,23 @@
 
   # Install these packages for my user
   home.packages = with pkgs; [
+    atom
+    glances
     htop
     hugo
+    nvtop
+    obs-studio
+    signal-desktop
     signal-desktop
     spotify
+    teamspeak_client
     unzip
     vagrant
+    vim
     virt-manager
     vlc
+    youtube-dl
+    discord
   ];
 
   # Imports
