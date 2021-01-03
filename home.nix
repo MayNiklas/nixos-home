@@ -18,7 +18,7 @@
     nvtop
     obs-studio
     signal-desktop
-    signal-desktop
+    sublime3
     spotify
     teamspeak_client
     unzip
