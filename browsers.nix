@@ -1,6 +1,12 @@
-{ config, pkgs, lib, ... }:
-let vars = import ./vars.nix;
-in {
+{ config, pkgs, lib, ... }: {
+  programs.chromium = {
+    enable = true;
+    extensions = [
+      "aeblfdkhhhdcdjpifhhbdiojplfjncoa" # 1Password X
+      "cjpalhdlnbpafiamejdnhcphjbkeiagm" # uBlock Origin
+      "gcbommkclmclpchllfjekcdonpmejbdp" # HTTPS Everywhere
+    ];
+  };
   programs.firefox = {
     enable = true;
     package = pkgs.firefox-bin;
