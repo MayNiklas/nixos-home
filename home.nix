@@ -32,7 +32,7 @@
   ];
 
   # Imports
-  imports = [ ./modules/browsers.nix ];
+  imports = [ ./modules/browsers.nix ./modules/gtk.nix ];
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
