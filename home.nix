@@ -19,6 +19,7 @@
     nvtop
     obs-studio
     signal-desktop
+    sublime-merge
     sublime3
     spotify
     teamspeak_client
