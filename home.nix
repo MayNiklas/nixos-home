@@ -30,10 +30,19 @@
     vlc
     youtube-dl
     discord
+    jetbrains.pycharm-professional
+    vscode
+    rofi
   ];
 
   # Imports
-  imports = [ ./modules/browsers.nix ./modules/gtk.nix ];
+  imports = [
+ ./modules/browsers.nix
+ ./modules/gtk.nix
+ ./modules/i3.nix 
+];
+
+  services.gnome-keyring = { enable = true; };
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
