@@ -13,6 +13,7 @@ in {
     xorg.xdpyinfo
     pulsemixer
     alacritty
+    gnome3.gnome-screenshot
   ];
 
   services = {
@@ -31,6 +32,8 @@ in {
 
     config = {
       modifier = "Mod4";
+
+ #     bars = [ ]; 
       bars = [{
         position = "top";
         statusCommand = "${pkgs.i3status}/bin/i3status";
@@ -57,6 +60,11 @@ in {
         }
         {
           command = "nitrogen --restore";
+          always = true;
+          notification = false;
+        }
+        {
+          command = "pkill -USR1 polybar";
           always = true;
           notification = false;
         }
@@ -123,7 +131,7 @@ in {
             "exec xbacklight -inc 20"; # increase screen brightness
 
           "Print" =
-            "exec import png:- | xclip -selection clipboard -t image/png";
+            "exec gnome-screenshot -c -i";
         };
 
       terminal = "alacritty";
