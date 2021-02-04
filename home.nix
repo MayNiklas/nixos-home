@@ -32,14 +32,16 @@
     discord
     jetbrains.pycharm-professional
     vscode
-    rofi
+    gnome3.dconf 
   ];
 
   # Imports
   imports = [
  ./modules/browsers.nix
  ./modules/gtk.nix
- ./modules/i3.nix 
+ ./modules/i3.nix
+ ./modules/alacritty.nix
+ ./modules/rofi.nix
 ];
 
   services.gnome-keyring = { enable = true; };
