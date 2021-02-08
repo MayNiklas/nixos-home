@@ -13,6 +13,7 @@
   home.packages = with pkgs; [
     _1password-gui
     atom
+    dolphin
     glances
     htop
     hugo
