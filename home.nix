@@ -37,7 +37,8 @@
 
   # Imports
   imports = [
-    ./modules/browsers.nix
+    ./modules/chromium.nix
+    ./modules/firefox.nix
     ./modules/devolopment.nix
     ./modules/gtk.nix
     ./modules/i3.nix
