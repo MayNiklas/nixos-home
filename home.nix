@@ -31,19 +31,19 @@
     vlc
     youtube-dl
     discord
-    jetbrains.pycharm-professional
     vscode
-    gnome3.dconf 
+    gnome3.dconf
   ];
 
   # Imports
   imports = [
- ./modules/browsers.nix
- ./modules/gtk.nix
- ./modules/i3.nix
- ./modules/alacritty.nix
- ./modules/rofi.nix
-];
+    ./modules/browsers.nix
+    ./modules/devolopment.nix
+    ./modules/gtk.nix
+    ./modules/i3.nix
+    ./modules/alacritty.nix
+    ./modules/rofi.nix
+  ];
 
   services.gnome-keyring = { enable = true; };
 
