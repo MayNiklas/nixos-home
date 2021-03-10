@@ -15,6 +15,7 @@
     atom
     discord
     dolphin
+    firefox
     glances
     htop
     hugo
@@ -40,7 +41,6 @@
   # Imports
   imports = [
     ./modules/chromium.nix
-    ./modules/firefox.nix
     ./modules/devolopment.nix
     ./modules/gtk.nix
     ./modules/i3.nix
