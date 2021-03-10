@@ -8,6 +8,9 @@
   # paths it should manage.
   home.username = "nik";
   home.homeDirectory = "/home/nik";
+  
+  # Install these packages for my user
+  home.packages = with pkgs; [ intel-gpu-tools htop unzip ];
 
   # Imports
   imports = [ ./modules/zsh.nix ];
