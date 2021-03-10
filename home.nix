@@ -46,6 +46,7 @@
     ./modules/i3.nix
     ./modules/alacritty.nix
     ./modules/rofi.nix
+    ./modules/zsh.nix
   ];
 
   services.gnome-keyring = { enable = true; };
