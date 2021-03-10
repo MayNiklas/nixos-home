@@ -42,6 +42,7 @@
   imports = [
     ./modules/chromium.nix
     ./modules/devolopment.nix
+    ./modules/git.nix
     ./modules/gtk.nix
     ./modules/i3.nix
     ./modules/alacritty.nix
