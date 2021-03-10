@@ -1,11 +1,16 @@
 {
-   description = "A very basic flake";
+  description = "User configurations for MayNiklas";
 
-   outputs = { self, nixpkgs }: {
+  outputs = { self, nixpkgs }: {
 
-     packages.x86_64-linux.hello = nixpkgs.legacyPackages.x86_64-linux.hello;
+    nixosModules = {
 
-     defaultPackage.x86_64-linux = self.packages.x86_64-linux.hello;
+      # Desktop configuration, includes GUI
+      desktop = { imports = [ ./home.nix ]; };
 
-   };
- }
+      # Serevr user configuration, only CLI
+      server = { imports = [ ./home-server.nix ]; };
+
+    };
+  };
+}
