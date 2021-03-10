@@ -13,6 +13,7 @@
   home.packages = with pkgs; [
     _1password-gui
     atom
+    discord
     dolphin
     glances
     htop
@@ -33,6 +34,7 @@
     discord
     vscode
     gnome3.dconf
+    zoom-us
   ];
 
   # Imports
