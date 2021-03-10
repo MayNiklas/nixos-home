@@ -13,7 +13,7 @@
   home.packages = with pkgs; [ intel-gpu-tools htop unzip ];
 
   # Imports
-  imports = [ ./modules/zsh.nix ];
+  imports = [ ./modules/git.nix ./modules/zsh.nix ];
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
