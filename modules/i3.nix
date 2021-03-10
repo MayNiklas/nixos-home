@@ -33,11 +33,10 @@ in {
     config = {
       modifier = "Mod4";
 
- #     bars = [ ]; 
-      bars = [{
-        position = "top";
-        statusCommand = "${pkgs.i3status}/bin/i3status";
-      }];
+      # bars = [{
+      #    position = "top";
+      #    statusCommand = "${pkgs.i3status}/bin/i3status";
+      #  }];
 
       menu = "rofi";
 
@@ -60,11 +59,6 @@ in {
         }
         {
           command = "nitrogen --restore";
-          always = true;
-          notification = false;
-        }
-        {
-          command = "pkill -USR1 polybar";
           always = true;
           notification = false;
         }
@@ -130,8 +124,7 @@ in {
           "XF86MonBrightnessUp" =
             "exec xbacklight -inc 20"; # increase screen brightness
 
-          "Print" =
-            "exec gnome-screenshot -c -i";
+          "Print" = "exec gnome-screenshot -c -i";
         };
 
       terminal = "alacritty";
