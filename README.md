@@ -20,6 +20,10 @@ git clone git@github.com:MayNiklas/nixos-home.git ~/.config/nixpkgs
 
 ## Switching to configs
 ```bash
-# executing home-manager
+# For desktops
 home-manager switch
+
+# For servers
+home-manager  -f .config/nixpkgs/home-server.nix switch
 ```
+
