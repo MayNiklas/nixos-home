@@ -8,7 +8,7 @@
   # paths it should manage.
   home.username = "nik";
   home.homeDirectory = "/home/nik";
-  
+
   # Allow "unfree" licenced packages
   nixpkgs.config = { allowUnfree = true; };
 
@@ -17,27 +17,29 @@
     _1password-gui
     atom
     discord
+    discord
     dolphin
     firefox
     glances
+    gnome3.dconf
     htop
     hugo
+    iperf3
+    nmap
     nvtop
     obs-studio
     signal-desktop
+    spotify
     sublime-merge
     sublime3
-    spotify
     teamspeak_client
     unzip
     vagrant
     vim
     virt-manager
     vlc
-    youtube-dl
-    discord
     vscode
-    gnome3.dconf
+    youtube-dl
     zoom-us
   ];
 
