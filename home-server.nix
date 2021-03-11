@@ -8,12 +8,18 @@
   # paths it should manage.
   home.username = "nik";
   home.homeDirectory = "/home/nik";
-  
+
   # Allow "unfree" licenced packages
   nixpkgs.config = { allowUnfree = true; };
-  
+
   # Install these packages for my user
-  home.packages = with pkgs; [ intel-gpu-tools htop unzip ];
+  home.packages = with pkgs; [
+    htop
+    intel-gpu-tools
+    iperf3
+    nmap
+    unzip
+  ];
 
   # Imports
   imports = [ ./modules/git.nix ./modules/zsh.nix ];
