@@ -27,3 +27,10 @@ home-manager switch
 home-manager  -f .config/nixpkgs/home-server.nix switch
 ```
 
+## Updating flakes.lock file
+```bash
+nix flake update --recreate-lock-file
+git add flake.lock
+git commit -m "↗️ update flake.lock"
+git push
+```
