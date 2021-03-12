@@ -34,9 +34,9 @@ steps:
 - name: Push updated flake.lock
   image: appleboy/drone-git-push
   settings:
-    branch: main
+    branch: update-flake
     remote: git@github.com:MayNiklas/nixos-home.git
-    force: false
+    force: true
     commit: true
     force: true
     commit_message: "❄️ Update flake.lock"
