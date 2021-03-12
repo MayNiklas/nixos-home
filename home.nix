@@ -20,6 +20,7 @@
     discord
     dolphin
     firefox
+    gcc
     glances
     gnome3.dconf
     htop
@@ -33,6 +34,7 @@
     sublime-merge
     sublime3
     teamspeak_client
+    thunderbird-bin
     unzip
     vagrant
     vim
