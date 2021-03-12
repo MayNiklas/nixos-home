@@ -47,3 +47,4 @@ steps:
     - main
     event:
     - push
+    - cron
