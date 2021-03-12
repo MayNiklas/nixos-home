@@ -19,6 +19,7 @@
     discord
     discord
     dolphin
+    drone-cli
     firefox
     gcc
     glances
