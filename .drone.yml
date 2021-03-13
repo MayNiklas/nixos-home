@@ -24,6 +24,20 @@ steps:
   environment:
     NIX_PATH: nixpkgs=channel:nixos-unstable
 
+- name: notify on failure
+  image: drillster/drone-email
+  settings:
+    username: apikey
+    from:
+      from_secret: email_from
+    host:
+      from_secret: email_host
+    password:
+      from_secret: email_password
+  when:
+    status:
+    - failure
+
 ---
 kind: pipeline
 type: docker
@@ -48,6 +62,20 @@ steps:
     commit_message: "❄️ Update flake.lock"
     ssh_key:
       from_secret: deploy_key
+      
+- name: notify on failure
+  image: drillster/drone-email
+  settings:
+    username: apikey
+    from:
+      from_secret: email_from
+    host:
+      from_secret: email_host
+    password:
+      from_secret: email_password
+  when:
+    status:
+    - failure
 
 trigger:
   branch:
