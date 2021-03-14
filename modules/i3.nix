@@ -8,6 +8,7 @@ in {
     i3lock
     i3blocks
     arandr
+    feh
     rofi
     xorg.xmodmap
     xorg.xdpyinfo
@@ -51,6 +52,11 @@ in {
           command = "autorandr -c";
           always =
             false; # Important, run only on first start (will loop otherwise)!
+          notification = false;
+        }
+        {
+          command = "${pkgs.feh}/bin/feh --bg-fill ~/background.png";
+          always = true;
           notification = false;
         }
         {
