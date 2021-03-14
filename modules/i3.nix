@@ -55,7 +55,7 @@ in {
           notification = false;
         }
         {
-          command = "${pkgs.feh}/bin/feh --bg-fill ~/background.png";
+          command = "${pkgs.feh}/bin/feh --bg-fill ~/wallpaper-CS2420.jpg wallpaper-AW3420.jpg";
           always = true;
           notification = false;
         }
