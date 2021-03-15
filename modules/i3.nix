@@ -55,17 +55,20 @@ in {
           notification = false;
         }
         {
-          command = "${pkgs.feh}/bin/feh --bg-fill ~/wallpaper-CS2420.jpg wallpaper-AW3420.jpg";
-          always = true;
-          notification = false;
-        }
-        {
-          command = "xfce4-volumed-pulse &";
+          command =
+            "${inputs.wallpaper-generator}/bin/wallpaper-generator -- harmonograph --width 1920 --height 1200 --output ~/generator-harmonograph.png";
           always = false;
           notification = false;
         }
         {
-          command = "nitrogen --restore";
+          command =
+            "${inputs.wallpaper-generator}/bin/wallpaper-generator -- prisma --width 3440 --height 1440 --output ~/generator-prisma.png";
+          always = false;
+          notification = false;
+        }
+        {
+          command =
+            "${pkgs.feh}/bin/feh --bg-center ~/generator-harmonograph.png ~/generator-prisma.png";
           always = true;
           notification = false;
         }
