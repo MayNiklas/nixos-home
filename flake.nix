@@ -1,7 +1,9 @@
 {
   description = "User configurations for MayNiklas";
 
-  outputs = { self, nixpkgs }: {
+  inputs = { wallpaper-generator.url = "github:pinpox/wallpaper-generator"; };
+
+  outputs = { self, nixpkgs, wallpaper-generator }: {
 
     nixosModules = {
 
