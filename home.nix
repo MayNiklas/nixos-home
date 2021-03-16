@@ -35,6 +35,7 @@
     sublime-merge
     sublime3
     teamspeak_client
+    tdesktop
     thunderbird-bin
     unzip
     vagrant
