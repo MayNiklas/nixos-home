@@ -14,6 +14,7 @@
 
   # Install these packages for my user
   home.packages = with pkgs; [
+    gcc
     htop
     intel-gpu-tools
     iperf3
