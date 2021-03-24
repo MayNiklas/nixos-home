@@ -2,7 +2,7 @@
 
   programs.vscode = {
     enable = true;
-    package = pkgs.vscode;
+    package = pkgs.vscodium;
     extensions = with pkgs.vscode-extensions; [
       ms-python.python
       ms-vscode.cpptools
