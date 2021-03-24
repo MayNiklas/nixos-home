@@ -42,7 +42,6 @@
     vim
     virt-manager
     vlc
-    vscode
     youtube-dl
     zoom-us
   ];
@@ -56,6 +55,7 @@
     ./modules/i3.nix
     ./modules/alacritty.nix
     ./modules/rofi.nix
+    ./modules/vscode.nix
     ./modules/zsh.nix
   ];
 
