@@ -42,7 +42,6 @@
     vim
     virt-manager
     vlc
-    vscode
     youtube-dl
     zoom-us
   ];
