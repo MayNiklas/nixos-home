@@ -23,7 +23,7 @@
   ];
 
   # Imports
-  imports = [ ./modules/git.nix ./modules/zsh.nix ];
+  imports = [ ./modules/git.nix ./modules/vim.nix ./modules/zsh.nix ];
 
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
