@@ -71,6 +71,8 @@ in {
   programs.htop = {
     enable = true;
     treeView = true;
+    showCpuUsage = true;
+    showProgramPath = false;
   };
 
   programs.jq.enable = true;
