@@ -59,7 +59,7 @@ in {
     ./modules/alacritty.nix
     ./modules/rofi.nix
     ./modules/vim.nix
-    # ./modules/vscode.nix
+    ./modules/vscode.nix
     ./modules/zsh.nix
   ];
 
