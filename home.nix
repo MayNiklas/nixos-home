@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
-{
+let darknet = pkgs.callPackage ./packages/darknet { };
+
+in {
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
@@ -18,6 +20,7 @@
     atom
     discord
     discord
+    darknet
     dolphin
     drone-cli
     firefox
