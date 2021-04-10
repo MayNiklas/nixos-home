@@ -1,5 +1,8 @@
 # nixos-home
 
+## DEPRECATION NOTICE:
+This repository is unmaintained and only here to allow reviewing commit history. The configuration has been merged into my [main nixos configuration repository](https://github.com/mayniklas/nixos)
+
 ## Installing Home Manager
 
 ```bash
